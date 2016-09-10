@@ -115,6 +115,19 @@ helloworld/fast:
 .PHONY : helloworld/fast
 
 #=============================================================================
+# Target rules for targets named miletokm
+
+# Build rule for target.
+miletokm: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 miletokm
+.PHONY : miletokm
+
+# fast build rule for target.
+miletokm/fast:
+	$(MAKE) -f source/CMakeFiles/miletokm.dir/build.make source/CMakeFiles/miletokm.dir/build
+.PHONY : miletokm/fast
+
+#=============================================================================
 # Target rules for targets named tests
 
 # Build rule for target.
@@ -136,6 +149,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... helloworld"
+	@echo "... miletokm"
 	@echo "... tests"
 .PHONY : help
 

@@ -60,11 +60,13 @@ CMAKE_BINARY_DIR = /home/vanya/Programmiersprachen/programmiersprachen2016/build
 
 # Convenience name for "all" pass in the directory.
 source/all: source/CMakeFiles/helloworld.dir/all
+source/all: source/CMakeFiles/miletokm.dir/all
 source/all: source/CMakeFiles/tests.dir/all
 .PHONY : source/all
 
 # Convenience name for "clean" pass in the directory.
 source/clean: source/CMakeFiles/helloworld.dir/clean
+source/clean: source/CMakeFiles/miletokm.dir/clean
 source/clean: source/CMakeFiles/tests.dir/clean
 .PHONY : source/clean
 
@@ -108,13 +110,48 @@ clean: source/CMakeFiles/helloworld.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target source/CMakeFiles/miletokm.dir
+
+# All Build rule for target.
+source/CMakeFiles/miletokm.dir/all:
+	$(MAKE) -f source/CMakeFiles/miletokm.dir/build.make source/CMakeFiles/miletokm.dir/depend
+	$(MAKE) -f source/CMakeFiles/miletokm.dir/build.make source/CMakeFiles/miletokm.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/vanya/Programmiersprachen/programmiersprachen2016/build/CMakeFiles  2
+	@echo "Built target miletokm"
+.PHONY : source/CMakeFiles/miletokm.dir/all
+
+# Include target in all.
+all: source/CMakeFiles/miletokm.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+source/CMakeFiles/miletokm.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vanya/Programmiersprachen/programmiersprachen2016/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/miletokm.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vanya/Programmiersprachen/programmiersprachen2016/build/CMakeFiles 0
+.PHONY : source/CMakeFiles/miletokm.dir/rule
+
+# Convenience name for target.
+miletokm: source/CMakeFiles/miletokm.dir/rule
+.PHONY : miletokm
+
+# clean rule for target.
+source/CMakeFiles/miletokm.dir/clean:
+	$(MAKE) -f source/CMakeFiles/miletokm.dir/build.make source/CMakeFiles/miletokm.dir/clean
+.PHONY : source/CMakeFiles/miletokm.dir/clean
+
+# clean rule for target.
+clean: source/CMakeFiles/miletokm.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target source/CMakeFiles/tests.dir
 
 # All Build rule for target.
 source/CMakeFiles/tests.dir/all:
 	$(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/depend
 	$(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/vanya/Programmiersprachen/programmiersprachen2016/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/vanya/Programmiersprachen/programmiersprachen2016/build/CMakeFiles  3
 	@echo "Built target tests"
 .PHONY : source/CMakeFiles/tests.dir/all
 

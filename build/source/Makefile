@@ -116,6 +116,20 @@ helloworld/fast:
 .PHONY : helloworld/fast
 
 # Convenience name for target.
+source/CMakeFiles/miletokm.dir/rule:
+	cd /home/vanya/Programmiersprachen/programmiersprachen2016/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/miletokm.dir/rule
+.PHONY : source/CMakeFiles/miletokm.dir/rule
+
+# Convenience name for target.
+miletokm: source/CMakeFiles/miletokm.dir/rule
+.PHONY : miletokm
+
+# fast build rule for target.
+miletokm/fast:
+	cd /home/vanya/Programmiersprachen/programmiersprachen2016/build && $(MAKE) -f source/CMakeFiles/miletokm.dir/build.make source/CMakeFiles/miletokm.dir/build
+.PHONY : miletokm/fast
+
+# Convenience name for target.
 source/CMakeFiles/tests.dir/rule:
 	cd /home/vanya/Programmiersprachen/programmiersprachen2016/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/tests.dir/rule
 .PHONY : source/CMakeFiles/tests.dir/rule
@@ -153,6 +167,30 @@ helloworld.cpp.s:
 	cd /home/vanya/Programmiersprachen/programmiersprachen2016/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/helloworld.cpp.s
 .PHONY : helloworld.cpp.s
 
+miletokm.o: miletokm.cpp.o
+.PHONY : miletokm.o
+
+# target to build an object file
+miletokm.cpp.o:
+	cd /home/vanya/Programmiersprachen/programmiersprachen2016/build && $(MAKE) -f source/CMakeFiles/miletokm.dir/build.make source/CMakeFiles/miletokm.dir/miletokm.cpp.o
+.PHONY : miletokm.cpp.o
+
+miletokm.i: miletokm.cpp.i
+.PHONY : miletokm.i
+
+# target to preprocess a source file
+miletokm.cpp.i:
+	cd /home/vanya/Programmiersprachen/programmiersprachen2016/build && $(MAKE) -f source/CMakeFiles/miletokm.dir/build.make source/CMakeFiles/miletokm.dir/miletokm.cpp.i
+.PHONY : miletokm.cpp.i
+
+miletokm.s: miletokm.cpp.s
+.PHONY : miletokm.s
+
+# target to generate assembly for a file
+miletokm.cpp.s:
+	cd /home/vanya/Programmiersprachen/programmiersprachen2016/build && $(MAKE) -f source/CMakeFiles/miletokm.dir/build.make source/CMakeFiles/miletokm.dir/miletokm.cpp.s
+.PHONY : miletokm.cpp.s
+
 tests.o: tests.cpp.o
 .PHONY : tests.o
 
@@ -185,11 +223,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... helloworld"
+	@echo "... miletokm"
 	@echo "... rebuild_cache"
 	@echo "... tests"
 	@echo "... helloworld.o"
 	@echo "... helloworld.i"
 	@echo "... helloworld.s"
+	@echo "... miletokm.o"
+	@echo "... miletokm.i"
+	@echo "... miletokm.s"
 	@echo "... tests.o"
 	@echo "... tests.i"
 	@echo "... tests.s"
